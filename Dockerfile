@@ -21,7 +21,7 @@ RUN set -ex \
     && cd /src/ss \
     && ./configure && make \
     && make install \
-    && rm -r /usr/src/redis \
+    && rm -rf /src \
     && apk del .build-deps
 
 ENTRYPOINT ["ss-server"]
