@@ -15,7 +15,7 @@ RUN set -ex \
         asciidoc \
         xmlto \
         libtool \
-        libpcre32 \
+        pcre-dev \
     \
     && mkdir -p /src/ss \
     && git clone https://github.com/shadowsocks/shadowsocks-libev.git /src/ss \
